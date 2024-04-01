@@ -15,7 +15,7 @@ Ensuring an optimal viewing experience across a wide range of devices, the landi
 
 ## Live Page
 
-Experience the interactive mascot and responsive design firsthand by visiting the live version of the landing page: [Laboratory Work Landing Page](https://stefannistor69.github.io/tum-web-lab3/).
+Experience the interactive mascot and responsive design firsthand by visiting the live version of the landing page: [Laboratory Work Landing Page](https://stefannistor69.github.io/tum-web-lab4/).
 
 ## Local Setup
 
