@@ -1,0 +1,605 @@
+html {
+  font-size: 16px; /* This sets the base font size */
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.2rem; 
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Padding on both sides */
+    margin: 0 auto; /* Centers the navbar */
+    max-width: 1200px; /* Same as the main content for alignment */
+    width: 100%;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    
+    gap: 20px;
+  }
+
+  .logo {
+
+    
+    
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: rgb(0, 82, 204);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin:auto;
+    font-size: small;
+    
+    
+  }
+  .button:hover{
+    opacity: 50%;
+  }
+
+/*   
+  .clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    width: 100%;
+    
+  }
+  
+  .clients img {
+    height: 40px; 
+    
+  } */
+
+  .main-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto; /* This centers the div and maintains a margin from the top and bottom */
+    padding: 0 20px; /* This adds padding inside the div */
+    max-width: 1200px; /* This limits the maximum width of the div */
+    width: 100%; /* This ensures it takes up 100% of the parent width until it reaches max-width */
+  }
+
+  .help-section {
+    padding: 50px 20px; /* Adjust padding as needed */
+    max-width: 1200px; /* This limits the maximum width of the div */
+    width: 100%; /* This ensures it takes up 100% of the parent width until it reaches max-width */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto; /* This centers the div and maintains a margin from the top and bottom */
+    
+  }
+  
+  .help-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .help-text {
+    max-width: 40%; /* Adjust the width as necessary */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 58%; /* Adjust the width as necessary */
+  }
+  
+  .cards-column {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* This will create space between the two cards */
+    padding: 5px;
+  }
+  
+  .info-section a{
+    
+    font-family: 'Lucida Sans', sans-serif;
+    text-decoration: none;
+    padding: 15px 20px;
+  }
+.info-section p{
+
+
+  margin-bottom: 30px;
+}
+
+  .info-section button{
+
+   font-size: small;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100px;
+    min-height: 155px;
+    text-align: center;
+    /* Cards will take the full width of the .cards-column container */
+  }
+  .card1,.card3{
+    position: relative;
+    top: -40px;
+  }
+  
+  
+  .card img{
+
+    max-width: 100%; /* Ensures the image is responsive and fits the card */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Changes the img from inline to block-level */
+  margin: 0 auto; /* Automatically calculates left and right margins to center the image */
+  }
+  
+  
+  .card img {
+    width: 100%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    margin-bottom: 20px;
+  }
+  .card1,.card2,.card3,.card4{
+
+    height: 193px !important;
+    width: 140px !important;
+    
+
+  }
+  .mobile-pricing-section {
+    background-color: white;
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center; /* Center cards vertically in a single column */
+    }
+  
+    .card, .card1, .card2, .card3, .card4 {
+      max-width: 80%; /* Allow cards to use more width on smaller screens */
+      margin-bottom: 20px; /* Ensure there's space between stacked cards */
+      position: relative;
+      top: auto; /* Remove the negative top positioning */
+    }
+    .mobile-pricing-section {
+      display: block;
+      padding: 20px;
+      background-color: white; /* Light background for visibility */
+    }
+  
+    .mobile-pricing-section .plan {
+      margin-bottom: 20px; /* Space between plans */
+      background-color: #ffffff; /* Background for each plan */
+      padding: 15px;
+      border-radius: 8px; /* Soften the corners */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+  
+    .mobile-pricing-section h2, .mobile-pricing-section h3 {
+      text-align: center; /* Center align the titles */
+    }
+  
+    .mobile-pricing-section ul {
+      list-style: none; /* Remove bullet points */
+      padding: 0; /* Remove padding */
+    }
+  
+    .mobile-pricing-section ul li {
+      text-align: center; /* Center list items */
+      margin: 10px 0; /* Space out the features */
+    }
+  
+    .mobile-pricing-section button {
+      display: block; /* Ensure button spans the width */
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px; /* Space above the button */
+      background-color: #007bff; /* Example button color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .mobile-pricing-section button:hover {
+      background-color: #0056b3; /* Darker shade on hover */
+    }
+  }
+  /* .newsletter-section {
+    padding: 50px 20px; 
+    max-width: 1200px;
+    width: 100%; 
+    position: relative;
+    justify-content: space-between;
+    margin: 20px auto; 
+    text-align: center;
+  } */
+  
+  /* .newsletter-content h2 {
+    color: #000; 
+    margin-bottom: 10px; 
+  }
+  
+  .newsletter-content p {
+    color: #666;
+    margin-bottom: 20px; 
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 10px;
+    border-radius: 20px; 
+    border: 1px solid #ddd; 
+    width: 300px; 
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none; 
+    background-color: rgb(0, 82, 204); 
+    color: white; 
+    cursor: pointer; 
+  } */
+  
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: row; /* Keep the direction horizontal */
+      justify-content: center; /* Center the items if needed */
+      flex-wrap: wrap; /* Allows items to wrap in case of insufficient space */
+    }
+  
+    .navbar li {
+      margin: 0 5px; /* Adjust horizontal spacing */
+    }
+  
+    /* Optional: Adjust navbar padding on smaller screens for better spacing */
+    .navbar {
+      padding: 0 10px;
+    }
+    .main-content {
+      flex-direction: column; /* Stacks the children vertically on smaller screens */
+    }
+  
+    .info-section,
+    .image-section {
+      flex-basis: 100%; /* Allows each section to take the full width of the container */
+      text-align: center; /* Center-aligns the content for a better mobile view */
+      
+      
+    }
+  
+    .image-section img {
+      max-width: 100%; /* Keeps the image responsive */
+      height: auto; /* Maintains the aspect ratio of the image */
+      margin-top: 20px; /* Adds space between the text and the image */
+      
+      
+    }
+    .help-content {
+      flex-direction: column;
+    }
+  
+    .help-text, .help-cards {
+      max-width: 100%;
+    }
+  
+    .cards-column {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .card {
+      
+      width: auto; /* Allow cards to expand */
+      margin: 10px 0; /* Add some spacing between cards */
+    }
+  
+    .card1, .card2, .card3, .card4 {
+      height: auto; /* Adjust height or remove fixed height for flexibility */
+    }
+    h1, h2, h3, p {
+      font-size: 90%; /* Reduce font size */
+    }
+    .newsletter-section, .informative-section, .footer-column, .social-media-icons {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .newsletter-form input[type="email"], .newsletter-form button {
+      width: 100%;
+      margin: 5px 0; /* Add spacing between form elements */
+    }
+    #mascot img {
+      width: 60px; /* Adjust the mascot size for smaller screens */
+    }
+  
+    #mascot .message {
+      font-size: smaller; /* Adjust message font size */
+    }
+  }
+  
+  .info-section {
+    flex-basis: 50%; /* Adjust as needed */
+  }
+  
+  .image-section {
+    flex-basis: 50%; /* Adjust as needed */
+    /* Align the image to the right if necessary */
+    text-align: right;
+    
+  }
+  
+  .image-section img {
+    width: 100%; /* This will make the image responsive */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    border-radius: 0 0 0 200px;
+  }
+  
+  .background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Send the shapes behind the content */
+    overflow: hidden; /* Prevents shapes from spilling out of the container */
+  }
+  
+  .background-shapes::before,
+  .background-shapes::after {
+    content: '';
+    position: absolute;
+    opacity: 0.1; /* Low opacity for the shapes */
+  }
+  
+  .background-shapes::before {
+    width: 200px;
+    height: 200px;
+    background-color: #007bff; /* Example color */
+    border-radius: 50%; /* Makes it a circle */
+    top: 10%;
+    left: 10%;
+  }
+  
+  .background-shapes::after {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff; /* Example color */
+    border-radius: 10%; /* Slightly rounded corners for a square */
+    bottom: 10%;
+    right: 10%;
+  }
+
+  h1, h3 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+  h2{
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  li{
+    font-size: 0.9rem;
+  }
+  
+  
+  .header, .main-content, .clients, .help-section, .newsletter-section {
+    padding: 2rem 1rem; /* Spacing is relative to the base font size */
+    
+  }
+  
+  .navbar-nav ul {
+    /* Use flexbox to handle layout */
+  }
+  
+  .navbar-nav li {
+    margin-right: 1rem; /* Space between nav items */
+  }
+  
+  .button {
+    padding: 0.1rem 1.7rem; /* Padding is relative to the base font size */
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto; /* Ensures image is responsive and maintains aspect ratio */
+  }
+
+  .informative-section {
+     /* Adjust to match your design */
+    padding: 40px 0;
+    color: #333; /* Text color */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust to your layout's max width */
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 20px;
+  }
+  
+  .footer-column p, .footer-column ul {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li a {
+    color: #333; /* Link color */
+    text-decoration: none;
+    margin-bottom: 5px; /* Space between links */
+    display: block; /* Make the links full width for easier click */
+  }
+  
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+  }
+  
+  .social-media-icons a {
+    display: inline-block;
+  }
+  
+  .social-media-icons img {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+  }
+  .Studio-column{
+
+    max-width: 40%;
+  }
+  .info-columns{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+  }
+
+  .section-divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Light grey color; adjust as needed */
+    margin: 20px 0; /* Space above and below the line */
+     /* Adjust padding as needed */
+    max-width: 1200px; /* This limits the maximum width of the div */
+     /* This ensures it takes up 100% of the parent width until it reaches max-width */
+    
+    margin: 20px auto;
+  }
+
+.section-background-shapes::before,
+.section-background-shapes::after {
+  content: '';
+  position: absolute;
+  opacity: 0.1; /* Low opacity for subtle effect */
+  z-index: -1;
+}
+
+.main-content::before {
+  width: 150px;
+  height: 150px;
+  background-color: #007bff; /* A shade of blue */
+  border-radius: 50%; /* Circle shape */
+  top: 10%;
+  left: 10%;
+  
+}
+
+.main-content::after {
+  width: 100px;
+  height: 100px;
+  background-color: #ebba1b; /* A shade of blue */
+  border-radius: 50%; /* Circle shape */
+  top: 100%;
+  left: 40%;
+  
+}
+
+#mascot {
+  position: fixed;
+
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  animation: slideUp 0.5s ease-out forwards, shake 1s ease-in-out 3s infinite;
+  
+}
+
+#mascot .message {
+  display: inline-block;
+  position: absolute;
+  right: 0; /* Aligns the message to the right edge of the mascot container */
+  bottom: 100%;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black; /* Example background color */
+  color: white; /* Text color */
+  padding: 5px 0; /* Top and bottom padding */
+  transition: max-width 0.5s ease-out, padding 0.5s ease-out; /* Smooth transition */
+  visibility: hidden; /* Initially hidden */
+  margin-bottom: 10px;
+}
+
+#mascot:hover .message {
+  max-width: 200px; /* Adjust based on the length of your message */
+  padding: 5px 10px; /* Add side padding when expanded */
+  visibility: visible; /* Make visible on hover */
+  border-radius: 20px;
+}
+#mascot img {
+  display: block;
+  width: 80px; /* Adjust the width as needed */
+  height: auto; /* Keeps the aspect ratio intact */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start from below the screen */
+  }
+  to {
+    transform: translateY(0); /* End at its final position */
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
